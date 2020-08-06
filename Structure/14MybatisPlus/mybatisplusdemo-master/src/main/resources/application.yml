@@ -1,0 +1,42 @@
+server:
+  port: 8088
+  servlet:
+    context-path: /itjt
+spring:
+  application:
+    name: itjt
+  datasource:
+    druid:
+      url: jdbc:mysql://192.168.145.160:3306/hydra_dev?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=CTT
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      initial-size: 5
+      max-active: 20
+      max-wait: 60000
+      test-on-return: true
+      test-on-borrow: true
+      test-while-idle: true
+      filters: stat,wall,log4j
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: select x
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: com.example.mybatisplusdemo.entity
+  global-config:
+    refresh: true
+    db-config:
+      db-type: mysql
+      id-type: uuid
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+      table-underline: true
+  configuration:
+    map-underscore-to-camel-case: true
+    aggressive-lazy-loading: true
+    auto-mapping-behavior: partial
+    auto-mapping-unknown-column-behavior: none
+    cache-enabled: true
+    call-setters-on-nulls: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

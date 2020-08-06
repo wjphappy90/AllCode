@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>v-model</title>
+		<script src="js/vuejs-2.5.16.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			用户名：<input type="text" v-model="user.username"><br/>
+			密码：<input type="text" v-model="user.password"><br/>
+			<input type="button" v-on:click="fun" value="按钮">
+		</div>
+	</body>
+	<script>
+		//view model
+		new Vue({
+			el:"#app",
+			data:{
+				user:{
+					username:"test",
+					password:"123"
+				}
+			},
+			methods:{
+				fun:function(){
+					this.user.username="haha";
+					this.user.password="1234";
+				}
+			}
+		});
+	</script>
+
+</html>

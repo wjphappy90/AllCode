@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>v-bind的使用</title>
+		<script src="js/vuejs-2.5.16.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<font size="5" v-bind:color="ys1">传智播客</font>
+			<font size="5" :color="ys2">黑马程序员</font>
+		</div>
+	</body>
+	<script>
+		//view model
+		//插值表达式不能用于html标签的属性取值
+		//要想给html标签的属性设置变量的值，需要使用v-bind
+		//v-bind也可以简化写法   直接使用:
+		new Vue({
+			el:"#app",
+			data:{
+			    ys1:"red",
+				ys2:"green"
+			}
+		})
+	</script>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ztree示例</title>
+<!-- 导入jquery核心类库 -->
+<script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
+<!-- 导入easyui类库 -->
+<script type="text/javascript" src="../js/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="../js/ztree/jquery.ztree.all-3.5.js"></script>
+<!-- 导入默认主题CSS文件 -->
+<link id="easyuiTheme" rel="stylesheet" type="text/css" href="../js/easyui/themes/default/easyui.css"/>
+<!--  导入图标CSS文件 -->
+<link rel="stylesheet" type="text/css" href="../js/easyui/themes/icon.css"/>
+<link rel="stylesheet" type="text/css" href="../js/ztree/zTreeStyle.css"/>
+<!--  导入国际化信息文件 -->
+<script src="../js/easyui/locale/easyui-lang-zh_CN.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+var ztreeObj;
+var setting={
+		data:{
+			simpleData:{
+			enable:true
+		}},
+		
+	   callback: {
+// 		   event 事件,treeId ul上的id,treeNode点击的节点
+	     onClick: function(event,treeId,treeNode){
+	    	 if(treeNode.page==undefined){//父节点的处理，没有page的情况
+	    		 return;
+	    	 }
+	    	 
+//	    	 动态添加选项卡判断tabs中是否存在
+	    	  var exists = $("#mytabs").tabs('exists',treeNode.name);
+//	    	      如果存在选中
+	    			if(exists){
+	    				$("#mytabs").tabs('select',treeNode.name);
+	    			}else{
+//	    		      如果没有存在增加
+	    				$("#mytabs").tabs('add',{
+	    					title:treeNode.name, //标题
+	    					selected:true,  //选中
+	    					closable:true,
+	    					//选项卡中的内容
+	    					content:"<iframe scrolling='no' src='../"+treeNode.page+"' style='height:100%;width:100%' ></iframe>"
+	    				})
+	    			}
+	     }
+		}
+};
+// var ztreeNodes=[
+//                 {name:"浏览器",open:true,children:[
+//                                       {name:"火狐浏览器"},
+//                                       {name:"谷歌浏览器"},
+//                                       {name:"IE浏览器"}
+//                                       ]}
+//                 ];
+var ztreeNodes=[
+                {id:1,name:"浏览器",open:true},
+                {id:11,name:"火狐浏览器",pId:1},
+                {id:12,name:"谷歌浏览器",pId:1},
+                {id:13,name:"IE浏览器",pId:1}
+                ];
+
+// 页面加载函数|匿名函数
+$(function(){ 
+// 	异步去调用json数据
+	$.post('../data/menu.json',function(datas){
+		ztreeObj = $.fn.zTree.init($("#mytree"), setting, datas);
+	},'json');
+	
+	
+	$("#addBtn").click(function(){
+// 		动态添加选项卡判断tabs中是否存在
+       var exists = $("#mytabs").tabs('exists',"选项卡三");
+//      如果存在选中
+		if(exists){
+			$("#mytabs").tabs('select',"选项卡三");
+		}else{
+//	      如果没有存在增加
+			$("#mytabs").tabs('add',{
+				title:'选项卡三', //标题
+				selected:true,  //选中
+				//选项卡中的内容
+				content:"<iframe scrolling='no' src='https://www.baidu.com' style='height:100%;width:100%' ></iframe>"
+			})
+		}
+	})
+})
+
+function reload(){
+	alert(111);
+}
+</script>
+
+</head>
+<body class="easyui-layout">
+<!--  <div class="easyui-layout" style="width:500px;height: 400px"> -->
+  <div title="北部" data-options="region:'north'" style="height: 100px">北部区域</div>
+  <div title="西部" data-options="region:'west'" style="width: 250px">
+    <div class="easyui-accordion" data-options="fit:true">
+       <div title="基本功能">
+          <ul id="mytree" class="ztree"></ul>
+       </div>
+       <div title="系统管理">系统管理</div>
+    </div>
+  </div>
+  <div title="中部" data-options="region:'center'">
+    <div id="mytabs" class="easyui-tabs" data-options="fit:true">
+       <div title="基本功能" data-options="closable:true,tools:[{iconCls:'icon-reload',handler:reload}]">基本功能</div>
+       <div title="系统管理">系统管理</div>
+    </div>
+  </div>
+  <div title="东部" data-options="region:'east'" style="width: 100px">东部区域</div>
+  <div title="南部" data-options="region:'south'" style="height: 50px">南部区域</div>
+<!--  </div> -->
+</body>
+</html>

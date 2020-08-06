@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>v-for遍历数组</title>
+		<script src="js/vuejs-2.5.16.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<ul>
+				<li v-for="(value,index) in arr">{{value}} and {{index}}</li>
+			</ul>
+		</div>
+	</body>
+	<script>
+		//view model
+		new Vue({
+			el:"#app",
+			data:{
+				arr:['a','b','c','d']
+			}
+		});
+	</script>
+</html>

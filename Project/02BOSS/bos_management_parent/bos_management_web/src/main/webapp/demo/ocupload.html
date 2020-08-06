@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="../js/jquery.ocupload-1.1.2.js"></script>
+<title>上传</title>
+<script type="text/javascript">
+ $(function(){
+	 $("#ocuploadFile").upload({
+		 action:'xxx.action',
+		 name:'myFile'
+	 });
+	 
+ })
+</script>
+</head>
+<body>
+<!-- <iframe name="myiframe" style="display: none"></iframe> -->
+<!-- <form target="myiframe" action="ssss.action" method="post" enctype="multipart/form-data"> -->
+<!--  <input type="file" > <button type="submit">提交</button> -->
+<!-- </form> -->
+<input id="ocuploadFile" type="button" value="文件上传" >
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>solrjd256</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- 配置springMvc核心控制器 -->
+	<servlet>
+		<servlet-name>springmvc</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath:springMvc.xml</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>springmvc</servlet-name>
+		<!-- 
+		*.action, 凡是url以.action结尾的都可以进入到DispatcherServlet中, 并且可以正常放行使用
+		/, 所有url路径都可以进入到DispatcherServlet中, 但是放行.jsp文件, 其它js, css, jpg, png等静态资源,不放行
+		 -->
+		<url-pattern>*.action</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 解决post乱码 -->
+  <filter>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>utf-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+</web-app>

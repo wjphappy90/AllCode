@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<breakpoints>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker charStart="19909" lineNumber="483" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=Pro01Mapper/D:\/RepMaven\/org\/springframework\/spring-beans\/4.3.10.RELEASE\/spring-beans-4.3.10.RELEASE.jar&lt;org.springframework.beans.factory.support(AbstractAutowireCapableBeanFactory.class[AbstractAutowireCapableBeanFactory"/>
+<attrib name="charEnd" value="19972"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:AbstractAutowireCapableBeanFactory [line: 483] [conditional] - createBean(String, RootBeanDefinition, Object[])"/>
+<attrib name="org.eclipse.jdt.debug.core.installCount" value="0"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.conditionEnabled" value="true"/>
+<attrib name="charStart" value="19909"/>
+<attrib name="org.eclipse.jdt.debug.core.condition" value="&quot;departmentMapper&quot;.equals(beanName)"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory"/>
+<attrib name="org.eclipse.jdt.internal.core.JavaModelManager.handleId" value="=Pro01Mapper/D:\/RepMaven\/org\/springframework\/spring-beans\/4.3.10.RELEASE\/spring-beans-4.3.10.RELEASE.jar&lt;org.springframework.beans.factory.support(AbstractAutowireCapableBeanFactory.class"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker charStart="5016" lineNumber="148" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="5016"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=Pro07Mapper/D:\/RepMaven\/tk\/mybatis\/mapper\/4.0.0-beta3\/mapper-4.0.0-beta3.jar&lt;tk.mybatis.mapper.provider.base(BaseSelectProvider.class[BaseSelectProvider"/>
+<attrib name="charEnd" value="5046"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:BaseSelectProvider [line: 148] - selectAll(MappedStatement)"/>
+<attrib name="org.eclipse.jdt.debug.core.installCount" value="0"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="tk.mybatis.mapper.provider.base.BaseSelectProvider"/>
+<attrib name="org.eclipse.jdt.internal.core.JavaModelManager.handleId" value="=Pro07Mapper/D:\/RepMaven\/tk\/mybatis\/mapper\/4.0.0-beta3\/mapper-4.0.0-beta3.jar&lt;tk.mybatis.mapper.provider.base(BaseSelectProvider.class"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker charStart="5549" lineNumber="139" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="5549"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=Pro07Mapper/D:\/RepMaven\/tk\/mybatis\/mapper\/4.0.0-beta3\/mapper-4.0.0-beta3.jar&lt;tk.mybatis.spring.mapper(ClassPathMapperScanner.class[ClassPathMapperScanner"/>
+<attrib name="charEnd" value="5628"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ClassPathMapperScanner [line: 139] - doScan(String...)"/>
+<attrib name="org.eclipse.jdt.debug.core.installCount" value="0"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="tk.mybatis.spring.mapper.ClassPathMapperScanner"/>
+<attrib name="org.eclipse.jdt.internal.core.JavaModelManager.handleId" value="=Pro07Mapper/D:\/RepMaven\/tk\/mybatis\/mapper\/4.0.0-beta3\/mapper-4.0.0-beta3.jar&lt;tk.mybatis.spring.mapper(ClassPathMapperScanner.class"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker charStart="3764" lineNumber="102" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="3764"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=Pro01Mapper/D:\/RepMaven\/org\/mybatis\/mybatis\/3.2.8\/mybatis-3.2.8.jar&lt;org.apache.ibatis.session.defaults(DefaultSqlSession.class[DefaultSqlSession"/>
+<attrib name="charEnd" value="3832"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:DefaultSqlSession [line: 102] - selectList(String, Object)"/>
+<attrib name="org.eclipse.jdt.debug.core.installCount" value="0"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="org.apache.ibatis.session.defaults.DefaultSqlSession"/>
+<attrib name="org.eclipse.jdt.internal.core.JavaModelManager.handleId" value="=Pro01Mapper/D:\/RepMaven\/org\/mybatis\/mybatis\/3.2.8\/mybatis-3.2.8.jar&lt;org.apache.ibatis.session.defaults(DefaultSqlSession.class"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/Pro07Mapper/src/main/java/com/atguigu/mybatis/services/DepartmentService.java" type="1"/>
+<marker charStart="431" lineNumber="18" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="431"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=Pro07Mapper/src\/main\/java&lt;com.atguigu.mybatis.services{DepartmentService.java[DepartmentService"/>
+<attrib name="charEnd" value="469"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:DepartmentService [line: 18] - getAll()"/>
+<attrib name="org.eclipse.jdt.debug.core.installCount" value="0"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.atguigu.mybatis.services.DepartmentService"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker charStart="7642" lineNumber="278" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="7642"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=Pro01Mapper/D:\/RepMaven\/org\/mybatis\/mybatis\/3.2.8\/mybatis-3.2.8.jar&lt;org.apache.ibatis.mapping(MappedStatement.class[MappedStatement"/>
+<attrib name="charEnd" value="7705"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.jdt.debug.core.installCount" value="0"/>
+<attrib name="message" value="Line breakpoint:MappedStatement [line: 278] - getBoundSql(Object)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="org.apache.ibatis.mapping.MappedStatement"/>
+<attrib name="org.eclipse.jdt.internal.core.JavaModelManager.handleId" value="=Pro01Mapper/D:\/RepMaven\/org\/mybatis\/mybatis\/3.2.8\/mybatis-3.2.8.jar&lt;org.apache.ibatis.mapping(MappedStatement.class"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker charStart="10326" lineNumber="297" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=Pro01Mapper/D:\/RepMaven\/tk\/mybatis\/mapper\/4.0.0-beta3\/mapper-4.0.0-beta3.jar&lt;tk.mybatis.mapper.mapperhelper(MapperHelper.class[MapperHelper"/>
+<attrib name="charEnd" value="10371"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:MapperHelper [line: 297] [conditional] - processMappedStatement(MappedStatement)"/>
+<attrib name="org.eclipse.jdt.debug.core.installCount" value="0"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.conditionEnabled" value="true"/>
+<attrib name="charStart" value="10326"/>
+<attrib name="org.eclipse.jdt.debug.core.condition" value="&quot;com.atguigu.mybatis.mappers.DepartmentMapper.selectAll&quot;.equals(ms.getId())"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="tk.mybatis.mapper.mapperhelper.MapperHelper"/>
+<attrib name="org.eclipse.jdt.internal.core.JavaModelManager.handleId" value="=Pro01Mapper/D:\/RepMaven\/tk\/mybatis\/mapper\/4.0.0-beta3\/mapper-4.0.0-beta3.jar&lt;tk.mybatis.mapper.mapperhelper(MapperHelper.class"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker charStart="2303" lineNumber="60" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="2303"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=Pro01Mapper/D:\/RepMaven\/org\/mybatis\/mybatis\/3.2.8\/mybatis-3.2.8.jar&lt;org.apache.ibatis.executor.statement(PreparedStatementHandler.class[PreparedStatementHandler"/>
+<attrib name="charEnd" value="2356"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:PreparedStatementHandler [line: 60] - query(Statement, ResultHandler)"/>
+<attrib name="org.eclipse.jdt.debug.core.installCount" value="0"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="org.apache.ibatis.executor.statement.PreparedStatementHandler"/>
+<attrib name="org.eclipse.jdt.internal.core.JavaModelManager.handleId" value="=Pro01Mapper/D:\/RepMaven\/org\/mybatis\/mybatis\/3.2.8\/mybatis-3.2.8.jar&lt;org.apache.ibatis.executor.statement(PreparedStatementHandler.class"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker charStart="1315" lineNumber="39" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="1315"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=Pro01Mapper/D:\/RepMaven\/org\/mybatis\/mybatis\/3.2.8\/mybatis-3.2.8.jar&lt;org.apache.ibatis.builder(StaticSqlSource.class[StaticSqlSource"/>
+<attrib name="charEnd" value="1334"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:StaticSqlSource [line: 39] - StaticSqlSource(Configuration, String, List&lt;ParameterMapping&gt;)"/>
+<attrib name="org.eclipse.jdt.debug.core.installCount" value="0"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="org.apache.ibatis.builder.StaticSqlSource"/>
+<attrib name="org.eclipse.jdt.internal.core.JavaModelManager.handleId" value="=Pro01Mapper/D:\/RepMaven\/org\/mybatis\/mybatis\/3.2.8\/mybatis-3.2.8.jar&lt;org.apache.ibatis.builder(StaticSqlSource.class"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker charStart="1484" lineNumber="45" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="1484"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=Pro01Mapper/D:\/RepMaven\/org\/mybatis\/mybatis\/3.2.8\/mybatis-3.2.8.jar&lt;org.apache.ibatis.builder(StaticSqlSource.class[StaticSqlSource"/>
+<attrib name="charEnd" value="1564"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.jdt.debug.core.installCount" value="0"/>
+<attrib name="message" value="Line breakpoint:StaticSqlSource [line: 45] - getBoundSql(Object)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="org.apache.ibatis.builder.StaticSqlSource"/>
+<attrib name="org.eclipse.jdt.internal.core.JavaModelManager.handleId" value="=Pro01Mapper/D:\/RepMaven\/org\/mybatis\/mybatis\/3.2.8\/mybatis-3.2.8.jar&lt;org.apache.ibatis.builder(StaticSqlSource.class"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+</breakpoints>
